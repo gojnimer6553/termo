@@ -156,9 +156,9 @@ export default function Home() {
       <Title>TERMO</Title>
       <Message>{message}</Message>
       {words.map(w => (
-        <Word>{w.split('').map((letter, index) => {
+        <Word key={w}>{w.split('').map((letter, index) => {
           const letterStyle = validedLetterOfWord(letter, index, w)
-          return (<Letter style={letterStyle}>{letter}</Letter>)
+          return (<Letter key={`${letter}-${index}`} style={letterStyle}>{letter}</Letter>)
         })}</Word>
       ))}
 
