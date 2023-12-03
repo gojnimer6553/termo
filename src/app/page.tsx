@@ -179,13 +179,13 @@ export default function Home() {
 
       <KeyboardContainer>
         <KeyboardLine>
-          {firstLine.map(k => (<KeyboardLetterItem onHandleClick={onClickLetterKeyboard} letter={k} validedLetterOfKeyboard={validedLetterOfKeboard} />))}
+          {firstLine.map(k => (<KeyboardLetterItem key={k} onHandleClick={onClickLetterKeyboard} letter={k} validedLetterOfKeyboard={validedLetterOfKeboard} />))}
         </KeyboardLine>
         <KeyboardLine>
-        {secondLine.map(k => (<KeyboardLetterItem onHandleClick={onClickLetterKeyboard} letter={k} validedLetterOfKeyboard={validedLetterOfKeboard} />))}
+        {secondLine.map(k => (<KeyboardLetterItem key={k} onHandleClick={onClickLetterKeyboard} letter={k} validedLetterOfKeyboard={validedLetterOfKeboard} />))}
         </KeyboardLine>
         <KeyboardLine>
-        {thirdLine.map(k => (<KeyboardLetterItem onHandleClick={onClickLetterKeyboard} letter={k} validedLetterOfKeyboard={validedLetterOfKeboard} />))}
+        {thirdLine.map(k => (<KeyboardLetterItem key={k} onHandleClick={onClickLetterKeyboard} letter={k} validedLetterOfKeyboard={validedLetterOfKeboard} />))}
           <InputButton onClick={handleInputWordSubmit}>ENTER</InputButton>
         </KeyboardLine>
       </KeyboardContainer>
