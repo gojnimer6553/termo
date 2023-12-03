@@ -20,5 +20,5 @@ export function KeyboardLetterItem({letter, validedLetterOfKeyboard, onHandleCli
         return styleLetterKeyBoardUnknown
       }
 
-  return <KeyboardLetter disabled={validedLetterOfKeyboard(letter) === LetterClassification.strong} onClick={() => onHandleClick(letter)} style={validedLetterOfKeboardStyle(letter)}>{letter}</KeyboardLetter>
+  return <KeyboardLetter key={letter} disabled={validedLetterOfKeyboard(letter) === LetterClassification.strong} onClick={() => onHandleClick(letter)} style={validedLetterOfKeboardStyle(letter)}>{letter}</KeyboardLetter>
 }
