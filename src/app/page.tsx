@@ -3,13 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { InputButton, InputContainer, KeyboardContainer, KeyboardLetter, KeyboardLine, Letter, Message, StyledInput, Title, Word, styleLetterAlmost, styleLetterKeyBoardAlmost, styleLetterKeyBoardStrong, styleLetterKeyBoardSuccess, styleLetterKeyBoardUnknown, styleLetterStrong, styleLetterSuccess, } from '../../styles'
 import palavras from './palavras.json'
 import { KeyboardLetterItem } from '@/components/KeyboardLetter';
-
-export enum LetterClassification {
-  correct = 1,
-  strong = 2,
-  almost = 3,
-  unknown = 4
-}
+import { LetterClassification } from '@/models';
 
 export default function Home() {
   const [correctWord, setCorrectWord] = useState('');
