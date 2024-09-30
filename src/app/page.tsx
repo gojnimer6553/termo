@@ -11,7 +11,7 @@ export default function Home() {
   const [words, setWords] = useState<string[]>([]);
   const [message, setMessage] = useState('');
   const [inputValue, setInputValue] = useState(['', '', '', '', '']);
-  const inputRefs = [useRef(), useRef(), useRef(), useRef(), useRef()];
+  const inputRefs: any = [useRef(), useRef(), useRef(), useRef(), useRef()];
     const [focusIndex, setFocusIndex] = useState(-1);
 
   const handleInputWordSubmit = () => {
